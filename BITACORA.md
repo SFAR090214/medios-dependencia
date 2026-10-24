@@ -1,0 +1,15 @@
+# Bitácora de la vigilancia diaria de medios — Dependencia en Canarias
+
+Registro de la tarea programada «Vigilancia medios dependencia» (nube). Cada ejecución añade una entrada al final.
+La bitácora completa del proyecto está en el CLAUDE.md de la carpeta 38-DependenciaCanarias (Google Drive de Sergio), que esta tarea no puede leer.
+
+## Contexto fijo
+- Dashboard: Dependencia en Canarias (ISTAC, operación E64055A, datos IMSERSO). Bloque IX · Difusión → «Dependencia en medios» lee `medios.csv` de este repositorio.
+- Cubos: API `https://datos.canarias.es/api/estadisticas/statistical-resources/v1.0/datasets/ISTAC/{ds}/~latest.jsonstat`. Territorios: ES70 Canarias, ES703 El Hierro, ES704 Fuerteventura, ES705 Gran Canaria, ES706 La Gomera, ES707 La Palma, ES708 Lanzarote, ES709 Tenerife.
+- Cubos usados en el CSV: 000001 solicitudes, 000008 prestaciones por tipo, 000012 personas con PIA, 000013 persona cuidadora, 000018 tiempos de gestión, 000019 lista de espera y pendientes, 000020 prestaciones efectivas, 000028 prestaciones por isla, 000031 tiempos por isla, 000032 lista de espera por isla, 000034 expedientes PIA por intervalo e isla.
+- Linaje del dato: la DG de Dependencia gestiona en SIDECAN → IMSERSO coteja y limpia → el ISTAC construye los cubos. Un desajuste entre una cifra de la DG y el cubo puede deberse a SIDECAN frente a IMSERSO o a otra fecha de corte. El Observatorio Estatal de la Dependencia usa criterio propio (su lista de espera incluye esperas de menos de 6 meses).
+- Marco normativo: Ley 4/2026, de 1 de octubre (BOE 3-oct-2026), en vigor desde el 23-oct-2026. Art. 28.1 de la Ley 39/2006: plazo máximo de resolución de 3 meses (antes 6).
+- No incorporar cifras aproximadas, sin periodo o mal atribuidas: solo anotarlas aquí.
+
+## Registro
+- 2026-10-24 — GitHub pasa a ser el maestro de `medios.csv` (53 filas). Retirada la copia desde Google. Creada la tarea diaria en la nube.
