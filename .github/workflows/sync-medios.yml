@@ -9,7 +9,7 @@ jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Descargar CSV publicado de la hoja de Google
         run: |
           curl -fsSL "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ1911ZQMJnVToPJdrCtm0migIbIeOxm_tFHftiGvbNn0rMtmLz2DqmHvETovvY2ROp53zJlHKhb4GR/pub?output=csv" -o medios.csv
